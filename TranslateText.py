@@ -30,12 +30,13 @@ class Translation:
         self.transformed_file = transformed_file
         with open(self.extract_file, 'a') as f:
             f.write('\n')
+	    
 
     def clean_text(self):
         text = open(self.extract_file, 'r').read()
         text = text.replace('\n', '\n ')
         text = text.replace('\n', '')
-        text = text.replace('. ', '.\n')
+        text = text.replace('.', '.\n')
         text = text.replace('!', '!\n')
         text = text.replace('?', '?\n')
         f = open(self.transformed_file, 'w')
@@ -55,11 +56,11 @@ class Translation:
 
 
     def write_translation(self):
-        f1 = open(self.extract_file, 'r')
+        f1 = open(self.transformed_file, 'r')
         with open(self.translate_file, 'w') as f:
             for i, line in enumerate(f1, 1):
-                f.write(str(i) + ') ' + str(line))
-                f.write(str(i) + ') ' + str(self.translate_text(line))+ '\n\n')
+                f.write(str(i) + ') ' + str(line.strip()) + '\n')
+                f.write(str(i) + ') ' + str(self.translate_text(line.strip()))+ '\n\n')
         f.close()
 
     

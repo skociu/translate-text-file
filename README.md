@@ -21,10 +21,11 @@ Example of language codes: 'fr' = French; 'sq' = Albanian; 'en' = English
 
 # Translation Text
 
-The translation text is a small extract from the Project Gutenberg's The Count of Monte Cristo, by Alexandre Dumas. The text will be translated from English to Albanian using the command below:
+The translation text is a small extract from the The Project Gutenberg EBook of Meditations, by Marcus Aurelius. The text can be translated from English to Albanian using the command below:
 
 <code>
 python TranslateText.py en sq
 </code>
 
-Link: http://www.gutenberg.org/files/1184/1184-0.txt
+Link to the Gutenberg text:
+http://www.gutenberg.org/cache/epub/2680/pg2680.txt
