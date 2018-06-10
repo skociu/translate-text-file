@@ -13,7 +13,7 @@ Example of command to run the script:
 python TranslateText.py fr en
 </code>
 
-The "fr en" means to translate a French text into Albanian.
+The "fr en" means to translate a French text into English.
 For more information on googletrans go to: http://py-googletrans.readthedocs.io/en/latest/
 
 Note: type print(googletrans.LANGUAGES) to see supported languages
